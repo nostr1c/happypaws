@@ -1,0 +1,20 @@
+.Hero {
+    background-color: red;
+    display: flex;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    justify-content: center;
+    background-image: url("../images/dogs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position-y: 70%;
+}
+
+.Hero::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(41, 41, 41, 0.692);
+    inset: 0;
+}
+
