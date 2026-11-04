@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer | HappyPaws</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/icons/bootstrap-icons.min.css">
+
+  <link rel="preload" as="image" href="images/dogs.webp">
+  <link rel="preload" as="image" href="images/dogs3.webp">
+
+  <!-- Own style -->
+  <link rel="stylesheet" href="styles/overwrites.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Scripts -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- HEADER START -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/">HappyPaws</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adopt.html">Adopt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="volunteer.html">Volunteer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- MAIN START -->
+  <main class="flex-grow-1">
+    <!-- HERO START -->
+    <section class="Hero" style="background-image: url('./images/dogs5.webp'); background-position-y: center;">
+      <div class="text-center text-light z-1 px-5">
+        <h1>Volunteering!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatibus vero provident enim neque harum
+          deleniti optio voluptate at!
+      </div>
+    </section>
+    <!-- HERO END -->
+
+    <!-- PAGE SPECIFIC CONTENT START -->
+    <section class="container my-5">
+      <form>
+        <h4 class="mb-4">Personal Information</h4>
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input class="form-control" type="text" name="firstName" id="firstName" placeholder="John" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Doe" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email address</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="john.doe@email.com" required>
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone number</label>
+            <input class="form-control" type="tel" name="phone" id="phone" placeholder="+46768734219">
+          </div>
+          <div class="col-md-6">
+            <label for="gender" class="form-label">Gender</label>
+            <select class="form-select" id="gender" name="gender">
+              <option selected disabled value="">Choose an option...</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="prefer_not_to_say">I'd rather not say</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="availability" class="form-label">Availability</label>
+            <select class="form-select" id="availability" name="availability">
+              <option selected disabled value="">Select preferred schedule...</option>
+              <option value="weekdays">Weekdays</option>
+              <option value="weekends">Weekends</option>
+              <option value="flexible">Flexible / Any time</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="address" class="form-label">Address</label>
+            <input class="form-control" type="text" name="address" id="address" placeholder="Some avenue 12th street">
+          </div>
+          <div class="col-md-6">
+            <label for="city" class="form-label">City</label>
+            <input class="form-control" type="text" name="city" id="city" placeholder="Stockholm">
+          </div>
+        </div>
+        <hr class="my-4">
+        <h4 class="mb-4">Experience</h4>
+        <div class="row g-3">
+          <div class="col-md-6 mb-3">
+            <label class="form-label d-block">What's your experience with dogs?</label>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="experience" id="noexperience" value="none">
+              <label class="form-check-label" for="noexperience">
+                I have no experience
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="experience" id="someexperience" value="some">
+              <label class="form-check-label" for="someexperience">
+                I have taken care of dogs before
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="experience" id="muchexperience" value="dog_owner">
+              <label class="form-check-label" for="muchexperience">
+                I have a dog at home
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label class="form-label d-block">Previous volunteering experience</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="yes" id="volunteerExperience"
+                name="volunteerExperience">
+              <label class="form-check-label" for="volunteerExperience">
+                I have volunteered with dogs before
+              </label>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <label for="aboutSelf" class="form-label">Tell us about yourself and why you want to volunteer</label>
+            <textarea class="form-control" id="aboutSelf" name="aboutSelf" rows="4"
+              placeholder="Share your motivation and any relevants skills..."></textarea>
+          </div>
+        </div>
+        <div class="mt-4 text-end">
+          <button type="submit" class="btn btn-primary">Submit Application</button>
+        </div>
+      </form>
+    </section>
+    <!-- PAGE SPECIFIC CONTENT END -->
+
+  </main>
+  <!-- MAIN END -->
+
+  <!-- FOOTER START -->
+
+  <footer class="py-4 mt-5">
+
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="text-light col-md-4 text-center text-md-start mb-3 mb-md-0">
+          <h5 class="mb-1">HappyPaws</h5>
+          <small>Making tails wag, one home at a time.</small>
+        </div>
+
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <a href="/" class="text-light text-decoration-none mx-2">Home</a>
+          <a href="adopt.html" class="text-light text-decoration-none mx-2">Adopt</a>
+          <a href="volunteer.html" class="text-light text-decoration-none mx-2">Volunteer</a>
+          <a href="aboutus.html" class="text-light text-decoration-none mx-2">About us</a>
+          <a href="contactus.html" class="text-light text-decoration-none mx-2">Contact us</a>
+        </div>
+
+        <div class="col-md-4 text-center text-md-end">
+          <a href="#" class="text-light mx-2" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-light mx-2" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary">
+
+      <p class="text-center text-secondary small mb-0 mt-5">
+        &copy; 2026 HappyPaws. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- FOOTER END -->
+
+</body>
+
+</html>
