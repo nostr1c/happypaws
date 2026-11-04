@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt | HappyPaws</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/icons/bootstrap-icons.min.css">
+
+  <!-- DataTables -->
+  <link href="./datatables/css/dataTables.bootstrap5.css" rel="stylesheet">
+
+  <!-- Own -->
+  <link rel="stylesheet" href="styles/overwrites.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Scripts -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.7.1.js"></script>
+  <script src="./datatables/js/dataTables.js"></script>
+  <script src="./datatables/js/dataTables.bootstrap5.js"></script>
+  <script src="./js/dogs.js"></script>
+  <script src="./js/adopt.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- HEADER START -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/">HappyPaws</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="adopt.html">Adopt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="volunteer.html">Volunteer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- MAIN START -->
+  <main class="flex-grow-1">
+    <!-- HERO START -->
+    <section class="Hero" style="background-image: url('./images/dogs.webp');">
+      <div class="text-center text-light z-1 px-5">
+        <h1>Adoption</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatibus vero provident enim neque
+          harum
+          deleniti optio voluptate at!
+      </div>
+    </section>
+    <!-- HERO END -->
+
+    <!-- PAGE SPECIFIC CONTENT START -->
+    <section class="container mt-5 table-responsive">
+      <table id="adoption-table" class="table table-striped align-middle">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Breed</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Status</th>
+            <th>Read more</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="images/adoption/dog1-small.webp" class="rounded-circle" width="60" height="60" alt="A brown dog resting">
+            </td>
+            <td>Luna</td>
+            <td>Golden retriever</td>
+            <td>4</td>
+            <td>Male</td>
+            <td>
+              <span class="badge bg-success">Available</span>
+            </td>
+            <td>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoption-modal">
+                <i class="bi bi-eye"></i>
+                Read more
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- PAGE SPECIFIC CONTENT END -->
+
+  </main>
+  <!-- MAIN END -->
+
+  <!-- MODAL -->
+  <div class="modal fade" id="adoption-modal" tabindex="-1" aria-labelledby="adoptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="adoptionModalLabel">Adopt Luna</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="col">
+                <img src="images/adoption/dog1-large.webp" alt="" class="img-fluid">
+              </div>
+              <div class="col">
+                <p class="h4 mb-2 mt-3 mt-md-0">Luna</p>
+                <p class="mb-1"><span class="badge bg-primary">Breed: </span> Golden Retriever</p>
+                <p class="mb-1"><span class="badge bg-primary">Born: </span> 2022-11-01</p>
+                <p class="mb-1"><span class="badge bg-primary">Gender: </span> Female</p>
+                <p class="mb-3"><span class="badge bg-primary">Breed: </span> Available</p>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis harum consectetur, magni rerum ducimus saepe doloribus, accusantium delectus, maxime ut pariatu.</p>
+                <button class="btn btn-primary"><i class="bi bi-envelope"></i> Contact us</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER START -->
+
+  <footer class="py-4 mt-5">
+
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="text-light col-md-4 text-center text-md-start mb-3 mb-md-0">
+          <h5 class="mb-1">HappyPaws</h5>
+          <small>Making tails wag, one home at a time.</small>
+        </div>
+
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <a href="/" class="text-light text-decoration-none mx-2">Home</a>
+          <a href="adopt.html" class="text-light text-decoration-none mx-2">Adopt</a>
+          <a href="volunteer.html" class="text-light text-decoration-none mx-2">Volunteer</a>
+          <a href="aboutus.html" class="text-light text-decoration-none mx-2">About us</a>
+          <a href="contactus.html" class="text-light text-decoration-none mx-2">Contact us</a>
+        </div>
+
+        <div class="col-md-4 text-center text-md-end">
+          <a href="#" class="text-light mx-2" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-light mx-2" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary">
+
+      <p class="text-center text-secondary small mb-0 mt-5">
+        &copy; 2026 HappyPaws. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- FOOTER END -->
+
+</body>
+
+</html>

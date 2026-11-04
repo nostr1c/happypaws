@@ -1,10 +1,9 @@
 .Hero {
-    background-color: red;
     display: flex;
     padding-top: 10em;
     padding-bottom: 10em;
     justify-content: center;
-    background-image: url("../images/dogs.jpg");
+    background-image: url("../images/dogs.webp");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -18,3 +17,11 @@
     inset: 0;
 }
 
+footer {
+    background-color: #2c2725;
+}
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.411);
+    z-index: 10;
+}
