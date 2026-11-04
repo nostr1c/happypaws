@@ -9,7 +9,13 @@
     background-position-y: 70%;
 }
 
-.Hero::before {
+@media (max-width: 767px) {
+    .Hero {
+        background-position-x: center;
+    }
+}
+
+.Hero::before, .carousel-item::before {
     content: "";
     position: absolute;
     background-color: rgba(41, 41, 41, 0.692);
