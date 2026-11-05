@@ -1,12 +1,14 @@
 .Hero {
-    display: flex;
     padding-top: 10em;
     padding-bottom: 10em;
-    justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     background-position-y: 70%;
+}
+
+.Hero h1, .Hero p {
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
 }
 
 @media (max-width: 767px) {
@@ -18,8 +20,12 @@
 .Hero::before, .carousel-item::before {
     content: "";
     position: absolute;
-    background-color: rgba(41, 41, 41, 0.692);
+    background-color: rgba(41, 41, 41, 0.151);
     inset: 0;
+}
+
+.carousel-item::before {
+    background-color: rgba(41, 41, 41, 0.329);
 }
 
 footer {
