@@ -44,10 +44,10 @@
               <a class="nav-link" href="volunteer.html">Volunteer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="aboutus.html">About us</a>
+              <a class="nav-link" href="aboutus.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact us</a>
+              <a class="nav-link active" href="contactus.html">Contact us</a>
             </li>
           </ul>
         </div>
@@ -83,11 +83,49 @@
     <!-- PAGE SPECIFIC CONTENT START -->
     <section class="container mt-3">
       <div class="row row-cols-1 row-cols-lg-2">
-        <div class="col">
-          
+        <div class="col pe-0 pe-lg-5">
+          <p class="h2">Reach out to us</p>
+          <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+          <p class="mt-3"> Ex quos, similique nulla, rerum illo delectus, voluptatem asperiores enim facere repellendus magni aut. Vero labore nemo dolorum molestias porro quas expedita?</p>
+        
+          <div class="mt-lg-5">
+            <a href="mailto:filip@happypaws.com">
+              <i class="bi bi-envelope"></i> 
+              filip@happypaws.com
+            </a>
+
+            <div class="mt-3  d-flex gap-2 socials">
+              <a href="#"><i class="fs-5 bi bi-facebook"></i></a>
+              <a href="#"><i class="fs-5 bi bi-instagram"></i></a>
+            </div>
+            
+          </div>
         </div>
-        <div class="col">
-          
+        <div class="col mt-5 mt-lg-0">
+          <form>
+            <div class="row row-cols-1 row-cols-sm-2 mb-3">
+              <div class="col mb-3 mb-sm-0">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="John">
+              </div>
+              <div class="col">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Doe">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="john.doe@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class="text-end">
+
+              <button class="btn btn-primary">Send</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
