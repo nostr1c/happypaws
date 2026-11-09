@@ -21,12 +21,11 @@
     content: "";
     position: absolute;
     background-color: rgba(41, 41, 41, 0.521);
-    backdrop-filter: blur(2px);
     inset: 0;
 }
 
-.carousel-item::before {
-    background-color: rgba(41, 41, 41, 0.329);
+.Hero::before {
+    backdrop-filter: blur(2px);
 }
 
 footer {
