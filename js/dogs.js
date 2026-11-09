@@ -10,7 +10,7 @@ const dogs = [
   },
   {
     "img": "dog2-small.webp",
-    "alt": "A energetic terrier running",
+    "alt": "A dog smiling",
     "name": "Rocky",
     "breed": "Jack Russell Terrier",
     "age": 2,
@@ -19,7 +19,7 @@ const dogs = [
   },
   {
     "img": "dog3-small.webp",
-    "alt": "A happy white fluffy puppy",
+    "alt": "A dog sitting",
     "name": "Bella",
     "breed": "Samoyed",
     "age": 1,
@@ -28,7 +28,7 @@ const dogs = [
   },
   {
     "img": "dog4-small.webp",
-    "alt": "A calm german shepherd sitting",
+    "alt": "A dog sitting and smiling",
     "name": "Max",
     "breed": "German Shepherd",
     "age": 5,
@@ -37,7 +37,7 @@ const dogs = [
   },
   {
     "img": "dog5-small.webp",
-    "alt": "A sweet beagle looking up",
+    "alt": "A dog in the snow",
     "name": "Daisy",
     "breed": "Beagle",
     "age": 3,
@@ -46,7 +46,7 @@ const dogs = [
   },
   {
     "img": "dog6-small.webp",
-    "alt": "A black lab playing with a ball",
+    "alt": "A dog laying on the ground with a ball",
     "name": "Cooper",
     "breed": "Labrador Retriever",
     "age": 6,
