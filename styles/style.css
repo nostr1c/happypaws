@@ -40,3 +40,7 @@ footer {
 .socials i {
     color: var(--color-primary) !important
 }
+
+.home-cta {
+    background-color: rgb(231, 231, 231);
+}
